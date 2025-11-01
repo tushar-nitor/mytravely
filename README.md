@@ -1,16 +1,22 @@
-# mytravaly
+# MyTravaly
 
-A new Flutter project.
+A 3-page Flutter application demonstrating modern UI/UX principles, clean architecture with BLoC, and live API integration for hotel search.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🛠️ Environment
 
-A few resources to get you started if this is your first Flutter project:
+- **Flutter Version**: 3.32.1
+- **Dart Version**: 3.8.1
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ✨ Features
+
+- **Animated Sign-In Screen**: A visually appealing, UI-only login page.
+- **Dynamic Home Page**: Displays a list of popular hotels fetched from a live API.
+- **Live Autocomplete Search**: Provides real-time search suggestions (hotels, cities) as the user types, with built-in debouncing for performance.
+- **Paginated Search Results**: Navigates to a dedicated results page with infinite scrolling to efficiently display a large number of hotels.
+- **Robust State Management**: Implements loading skeletons and error handling for a smooth user experience.
+
+---
