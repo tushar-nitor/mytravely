@@ -125,7 +125,7 @@ class ApiService {
           "searchType": searchType,
           "searchQuery": searchQuery,
           "accommodation": ["all"],
-          "limit": 5,
+          "limit": limit,
           "currency": "INR",
         },
       },

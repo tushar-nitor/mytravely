@@ -20,7 +20,7 @@ class HotelRepository {
     required List<String> searchQuery,
     required String searchType,
     int page = 1,
-    int limit = 10,
+    int limit = 5,
   }) {
     return _apiService.getHotelSearchResults(
       searchQuery: searchQuery,

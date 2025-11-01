@@ -1,3 +1,4 @@
+import 'package:bloc_concurrency/bloc_concurrency.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:mytravaly/data/repositories/hotel_repo.dart';
@@ -12,7 +13,7 @@ class SearchResultsBloc extends Bloc<SearchResultsEvent, SearchResultsState> {
 
   SearchResultsBloc({required this.hotelRepository}) : super(SearchResultsInitial()) {
     on<SearchHotels>(_onSearchHotels);
-    on<LoadMoreHotels>(_onLoadMoreHotels);
+    on<LoadMoreHotels>(_onLoadMoreHotels, transformer: droppable());
   }
 
   Future<void> _onSearchHotels(SearchHotels event, Emitter<SearchResultsState> emit) async {
